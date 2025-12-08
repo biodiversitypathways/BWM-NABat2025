@@ -189,7 +189,7 @@ create_species_matrix <- function(data, species_column, location_column = "site"
     )) %>%
     filter(species_string != "" & 
            species_string != "None" & 
-           species_string != "NoID" &
+           species_string != "NOID" &
            species_string != "NOISE"&
            species_string != "Noise" &
            species_string != "HiLo" ) %>%   
@@ -554,9 +554,9 @@ if (knitr::is_html_output()) {
 
 ### Data processing
 
-Full-spectrum recordings from the sampling periods were collected and processed using two automatic classifiers: Kaleidoscope’s Bats of North America 5.4.0 classifier and Sonobat 3.0’s southwest Canada Prairie classifier. Based on documented species ranges and prior detection data [@olsonBat], manual verification efforts focused on the species present at each individual site.
+Full-spectrum recordings from the sampling periods were collected and processed using two automatic classifiers: Kaleidoscope’s Bats of North America 5.4.0 classifier and Sonobat 3.0’s northeastern British Columbia classifier. Based on documented species ranges and prior detection data, manual verification efforts focused on the species present at each individual site.
 
-The analysis workflow followed processing standards established by the North American Bat Monitoring Program (NABat) [@reichert2018Guide]. Only recordings that received automated species classifications from either Kaleidoscope or Sonobat were selected for manual verification. For stationary acoustic monitoring sites, recordings were manually vetted until at least one recording per species per site per night was confidently identified. Species identifications were validated using reference call parameters described by @szewczak2018Acoustic, @slough2022New, and @solick2022Bat, in accordance with NABat manual vetting protocols.A full list of species names and codes can be found on [Appendix A]
+The analysis workflow followed processing standards established by the North American Bat Monitoring Program (NABat) [@reichert2018Guide]. Only recordings that received automated species classifications from either Kaleidoscope or Sonobat were selected for manual verification. For stationary acoustic monitoring sites, recordings were manually vetted until at least one recording per species per site per night was confidently identified. Species identifications were validated using reference call parameters described by @szewczak2018Acoustic, @slough2022New, and @solick2022Bat, in accordance with NABat manual vetting protocols. A full list of species names and codes can be found on [Appendix A]
 
 All recordings with their associated tags have been uploaded to Wildtrax to the project named [Blackwater Gold Mine NABAT Monitoring](https://portal.wildtrax.ca/aru/3871). All the associated tags have also been uploaded to NABat undet the project name [Blackwater Gold Mine NABAT Monitoring](https://sciencebase.usgs.gov/nabat/#/projects/8433).
 
@@ -564,7 +564,7 @@ All recordings with their associated tags have been uploaded to Wildtrax to the 
 
 ## Results
 
-Following manual verification, hoary bats(*Lasiurus cinereus*), eastern red bats (*Lasirus borealis*), and little brown Myotis (*Myotis lucifugus*) were detected at all surveyed locations ([@fig-MVsummary]). Silver-haired bats (*Lasionycteris noctivagans*) were detected at all sites except IPCA-BH-BAT-07; however, their presence at this site remains plausible given regional distributions. Northern Myotis (*Myotis septentrionalis*) were detected only at the IPCA-STRATH-01 location. As this species is challenging to detect using acoustic methods, non-detection at other sites should not be interpreted as evidence of true absence.
+Following manual verification, Eastern Red Bats (*Lasirus borealis*), Silver-haired bats (*Lasionycteris noctivagans*), and Little Brown Myotis (*Myotis lucifugus*) were detected at all surveyed locations ([@fig-MVsummary]). Long-eared Myotis (*Myotis evotis*) was detected at all surveyed locations except for at BAT20, their presence at this site remains plausible given regional distributions. Hoary bats (*Lasirus cinereus*) were detected at all sites except BAT18 and BAT8; however, their presence at this site remains plausible given regional distributions.
 
 ```{r}
 #| label: fig-MVsummary
@@ -617,6 +617,8 @@ if (knitr::is_latex_output()) {
 ## Recomendations
 
 Overall, deployments performed well. We recommend verifying deployment settings, as the unit BAT14_73082 appeared to collect a high volume of noise files at regular 15-minute intervals. This pattern suggests that both triggered and scheduled recordings may have been enabled. Running both modes concurrently can deplete batteries quicker; therefore, we recommend using triggered recordings only when the objective is bat monitoring.
+
+This represents the first year of acoustic bat monitoring in this region, and continued monitoring is strongly encouraged to establish a robust baseline for long-term assessment. Sustained data collection over multiple years is critical for evaluating temporal patterns for bat species in the region. After a minimum of five consecutive years of monitoring, the dataset will be sufficient to support meaningful trend analyses and habitat association assessments, enabling more reliable evaluation of the persistence and distribution of bat species across the landscape.
 
 {{< pagebreak >}}
 
