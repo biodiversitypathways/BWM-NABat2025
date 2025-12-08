@@ -483,13 +483,13 @@ The North American Bat Monitoring Program (NABat) is a large-scale coordinated e
 
 ### 2025 NABat Monitoring in Blackwater Gold Mine
 
-In the field season of 2025, `r nrow(sites)` bat acoustic deployments were made at the Blackwater Mine managed by Artemis Gold. The monitoring stations collected data between `r min(sites$Date.Recording.Started)` and `r max(sites$Date.Recording.Ended)`. The recordings were submitted to SENSR for processing and manual vetting to determine species presence or absence at each location. Upon agreement with Artemis Gold, SENSR can share these results with the NNW Bat Hub for inclusion in the provincial annual report on the state of bat populations within British Columbia.
+In the field season of 2025, `r nrow(sites)` bat acoustic deployments were made at the Blackwater Gold Mine managed by BW Gold. The monitoring stations collected data between `r min(sites$Date.Recording.Started)` and `r max(sites$Date.Recording.Ended)`. The recordings were submitted to SENSR for processing and manual vetting to determine species presence or absence at each location. Upon agreement with BW Gold, SENSR can share these results with the NNW Bat Hub for inclusion in the provincial annual report on the state of bat populations within British Columbia.
 
 ## Methods
 
 ### Field Deployments
 
-In 2025, Artemis Gold deployed `r nrow(sites)` across Blackwater Gold Mine `r if(knitr::is_html_output()) {"([@fig-monitoring-locations])"} else {"([@tbl-sites])"}` following the standards set by NABat and the North by Northwest (NNW) Bat Hub [@reichert2018Guide]. All of these locations were new deployments for 2025 and collected data for a total of `r sum(sites$nights, na.rm = TRUE)` ARU nights. ARU nights quantify the total acoustic sampling effort by summing the number of nights each ARU was deployed and recording. This metric accounts for all individual recorder deployments, such that two ARUs recording for seven nights each would equal 14 ARU nights total, even if deployed concurrently.
+In 2025, BW Gold deployed `r nrow(sites)` across Blackwater Gold Mine `r if(knitr::is_html_output()) {"([@fig-monitoring-locations])"} else {"([@tbl-sites])"}` following the standards set by NABat and the North by Northwest (NNW) Bat Hub [@reichert2018Guide]. All of these locations were new deployments for 2025 and collected data for a total of `r sum(sites$nights, na.rm = TRUE)` ARU nights. ARU nights quantify the total acoustic sampling effort by summing the number of nights each ARU was deployed and recording. This metric accounts for all individual recorder deployments, such that two ARUs recording for seven nights each would equal 14 ARU nights total, even if deployed concurrently.
 
 
 ```{r}
