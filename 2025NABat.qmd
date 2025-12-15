@@ -1,6 +1,8 @@
 ---
 title: "North American Bat Monitoring Program in Blackwater Gold Mine"
 subtitle: "Manual Verification Data Summary - 2025"
+resources:
+  - logos/
 format:
   html:
     grid:
