@@ -31,8 +31,9 @@ editor: visual
 bibliography: references.bib
 nocite: '@*'
 ---
+{{< pagebreak >}}
 
-![](Images/73082-NW.jpg){style="float:left`;" fig-alt="Site deployment 73082-NW" fig-align="center"}
+![Little Brown Myotis (*Myotis lucifugus*)](Images/Little_brown_bat-JohnMacGregor.png){style="float:left`;" fig-alt="MYLU - John MacGregor" fig-align="left"}
 
 ```{r}
 #| label: setup - load libraries and data
@@ -483,7 +484,11 @@ The North American Bat Monitoring Program (NABat) is a large-scale coordinated e
 
 ### 2025 NABat Monitoring in Blackwater Gold Mine
 
-In the field season of 2025, `r nrow(sites)` bat acoustic deployments were made at the Blackwater Gold Mine managed by BW Gold. The monitoring stations collected data between `r min(sites$Date.Recording.Started)` and `r max(sites$Date.Recording.Ended)`. The recordings were submitted to SENSR for processing and manual vetting to determine species presence or absence at each location. Upon agreement with BW Gold, SENSR can share these results with the NNW Bat Hub for inclusion in the provincial annual report on the state of bat populations within British Columbia.
+In the field season of 2025, `r nrow(sites)` bat acoustic deployments were made at the Blackwater Gold Mine managed by BW Gold. The monitoring stations collected data between `r min(sites$Date.Recording.Started)` and `r max(sites$Date.Recording.Ended)`. The recordings were submitted to SENSR for processing and manual vetting to determine species presence or absence at each location. Upon agreement with BW Gold, SENSR can share these results with the NNW Bat Hub for inclusion in the provincial annual report on the state of bat populations within British 
+
+![Site deployment at Blackwater Mine 73082-NW](Images/73082-NW.jpg)
+
+{{< pagebreak >}}
 
 ## Methods
 
@@ -613,6 +618,7 @@ if (knitr::is_latex_output()) {
   print(SB_plot)
 }
 ```
+{{< pagebreak >}}
 
 ## Recomendations
 
